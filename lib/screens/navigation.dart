@@ -19,6 +19,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
   final List<Widget> _screenList = [
     HomeScreen(),
     ExperienceScreen(),
+    FormationScreen(),
+    CompetenceScreen(),
+    InfoScreen(),
   ];
 
   @override
@@ -39,12 +42,27 @@ class _NavigationScreenState extends State<NavigationScreen> {
                 icon: Icon(
                   Icons.home,
                 ),
-                label: 'Accueil'),
+                label: 'Moi'),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.work,
                 ),
                 label: 'Expériences'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.wallet_travel_sharp,
+                ),
+                label: 'Formation'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.code,
+                ),
+                label: 'Compétences'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.info_outlined,
+                ),
+                label: 'Infos'),
           ]),
     );
   }
