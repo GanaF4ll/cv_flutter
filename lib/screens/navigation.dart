@@ -1,6 +1,10 @@
 // fichier de navigation
 import "package:flutter/material.dart";
 import "home.dart";
+import "experience.dart";
+import "formation.dart";
+import "competence.dart";
+import "info.dart";
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
@@ -14,6 +18,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
   int _currentScreen = 0;
   final List<Widget> _screenList = [
     HomeScreen(),
+    ExperienceScreen(),
   ];
 
   @override
@@ -35,6 +40,11 @@ class _NavigationScreenState extends State<NavigationScreen> {
                   Icons.home,
                 ),
                 label: 'Accueil'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.work,
+                ),
+                label: 'Expériences'),
           ]),
     );
   }
