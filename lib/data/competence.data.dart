@@ -9,6 +9,7 @@ List<Map> front = [
   {"img": "bootstrap2.svg", "name": "Bootstrap"},
   {"img": "tailwind.svg", "name": "Tailwind"},
   {"img": "nextjs.svg", "name": "Next.js"},
+  {"img": "github.png", "name": "git"},
 ];
 
 List<Map> back = [
