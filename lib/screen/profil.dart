@@ -44,32 +44,7 @@ class ProfilScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  ClipOval(
-                    child: Image.asset(
-                      'images/amir.webp', // Assurez-vous que le chemin est correct
-                      height: 100,
-                      width: 100,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
                   const SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      IconButton(
-                          onPressed: () => {},
-                          icon:
-                              const Icon(Icons.facebook, color: Colors.amber)),
-                      IconButton(
-                          onPressed: () => {},
-                          icon:
-                              const Icon(Icons.facebook, color: Colors.amber)),
-                      IconButton(
-                          onPressed: () => {},
-                          icon:
-                              const Icon(Icons.facebook, color: Colors.amber)),
-                    ],
-                  )
                 ],
               ),
             ),
