@@ -6,9 +6,22 @@ class ProfilScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Profil'),
-        backgroundColor: Colors
-            .blue.shade700, // Changez la couleur de l'app bar si nécessaire
+        title: const Text('Formation'),
+        backgroundColor: Colors.blue.shade700,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.facebook),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.wordpress),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.volcano),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(

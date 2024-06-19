@@ -15,11 +15,11 @@ class FormationScreen extends StatelessWidget {
             onPressed: () {},
           ),
           IconButton(
-            icon: const Icon(Icons.facebook),
+            icon: const Icon(Icons.wordpress),
             onPressed: () {},
           ),
           IconButton(
-            icon: const Icon(Icons.dataset_linked),
+            icon: const Icon(Icons.volcano),
             onPressed: () {},
           ),
         ],

@@ -13,24 +13,24 @@ Ce projet Flutter présente une interface utilisateur détaillant le profil, les
 ## Installation
 
 1. Clonez ce dépôt :
-    ```bash
-    git clone https://github.com/amir-398/flutter_cv_app.git
-    ```
+   ```bash
+   git clone https://github.com/amir-398/flutter_cv_app.git
+   ```
 2. Accédez au répertoire du projet :
-    ```bash
-    cd flutter_cv_app
-    ```
+   ```bash
+   cd flutter_cv_app
+   ```
 3. Installez les dépendances :
-    ```bash
-    flutter pub get
-    ```
+   ```bash
+   flutter pub get
+   ```
 
 ## Utilisation
 
 1. Lancez l'application Flutter :
-    ```bash
-    flutter run
-    ```
+   ```bash
+   flutter run
+   ```
 2. Explorez les différentes sections pour en savoir plus sur le profil et les expériences du développeur.
 
 ## Structure du Projet
@@ -41,7 +41,7 @@ Ce projet Flutter présente une interface utilisateur détaillant le profil, les
 - `lib/screen/info.dart` : Page affichant les informations supplémentaires.
 - `lib/screen/competence.dart` : Page affichant les compétences.
 - `lib/screen/device.dart` : Page qui englobe toutes les pages.
-- `assets/image/` : Répertoire contenant les images utilisées dans l'application.
+- `assets/` : Répertoire contenant les images utilisées dans l'application.
 
 ## Auteur
 
