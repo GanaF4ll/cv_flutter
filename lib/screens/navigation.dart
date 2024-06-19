@@ -40,9 +40,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.home,
+                  Icons.person,
                 ),
-                label: 'Moi'),
+                label: 'Profil'),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.work,
