@@ -6,9 +6,22 @@ class CompetenceScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Compétence'),
-        backgroundColor:
-            Colors.teal, // Changez la couleur de l'app bar si nécessaire
+        title: const Text('Compétences'),
+        backgroundColor: Colors.blue.shade700,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.facebook),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.facebook),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.dataset_linked),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(30),
@@ -22,9 +35,9 @@ class CompetenceScreen extends StatelessWidget {
                 spacing: 10,
                 runSpacing: 10,
                 children: [
-                  listImage('images/ps.png', 'Photoshop'),
-                  listImage('images/ai.png', 'Illustrator'),
-                  listImage('images/figma.png', 'Figma'),
+                  listImage('assets/ps.png', 'Photoshop'),
+                  listImage('assets/ai.png', 'Illustrator'),
+                  listImage('assets/figma.png', 'Figma'),
                 ],
               ),
             ),
@@ -36,14 +49,13 @@ class CompetenceScreen extends StatelessWidget {
                 spacing: 10,
                 runSpacing: 10,
                 children: [
-                  listImage('images/react.png', 'React'),
-                  listImage('images/vue.png', 'Vue'),
-                  listImage('images/html.png', 'HTML5'),
-                  listImage('images/js.png', 'JavaScript'),
-                  listImage('images/postgre.png', 'Postgre'),
-                  listImage('images/php.png', 'PHP'),
-                  listImage('images/css.png', 'Css'),
-                  listImage('images/mysql.png', 'Mysql.js'),
+                  listImage('assets/react.png', 'React'),
+                  listImage('assets/html.png', 'HTML5'),
+                  listImage('assets/js.png', 'JavaScript'),
+                  listImage('assets/postgre.png', 'Postgre'),
+                  listImage('assets/php.png', 'PHP'),
+                  listImage('assets/css.png', 'Css'),
+                  listImage('assets/mysql.png', 'Mysql.js'),
                 ],
               ),
             ),
@@ -55,8 +67,8 @@ class CompetenceScreen extends StatelessWidget {
                 spacing: 10,
                 runSpacing: 10,
                 children: [
-                  listImage('images/flutter.png', 'Flutter'),
-                  listImage('images/rn.png', 'Unity'),
+                  listImage('assets/flutter.png', 'Flutter'),
+                  listImage('assets/rn.png', 'Unity'),
                 ],
               ),
             ),

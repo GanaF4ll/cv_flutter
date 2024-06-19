@@ -55,7 +55,7 @@ class _DeviceScreenState extends State<DeviceScreen> {
                 label: 'Formation'),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.access_alarm,
+                  Icons.code,
                 ),
                 label: 'Compétence'),
             BottomNavigationBarItem(

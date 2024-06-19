@@ -18,4 +18,16 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/
+    - assets/ps.png
+    - assets/ai.png
+    - assets/figma.png
+    - assets/react.png
+    - assets/vue.png
+    - assets/html.png
+    - assets/js.png
+    - assets/postgre.png
+    - assets/php.png
+    - assets/css.png
+    - assets/mysql.png
+    - assets/flutter.png
+    - assets/rn.png

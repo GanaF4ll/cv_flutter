@@ -1,38 +1,51 @@
 import 'package:flutter/material.dart';
 
 class ExperienceScreen extends StatelessWidget {
-  const ExperienceScreen({super.key});
+  const ExperienceScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Expériences'),
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue.shade700,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.facebook),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.facebook),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.dataset_linked),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            experienceItem(
-                'Bahy',
-                'images/bahy.png',
-                'Bahy.fr',
-                'Développeur Full Stack (2023-actuellement)',
-                'Participation au développement et à la maintenance de diverses applications web. Collaboration avec les équipes de design et de backend pour implémenter des fonctionnalités modernes et responsives.'),
-            experienceItem(
-              'Portfolio',
-              'images/amir.png',
-              'Développeur web',
-              'Création et maintenance de mon portfolio personnel pour présenter mes projets et compétences.',
-              'Utilisation de technologies telles que HTML, CSS, JavaScript, et Flutter pour le développement du site.',
+            const SizedBox(height: 16),
+            _buildFormationSection(
+              logo: 'assets/sncf.jpg',
+              title: 'SNCF Voyageur',
+              items: [
+                'Développeur Full-Stack',
+                'Création et maintenance de différents Workflows',
+              ],
             ),
-            experienceItem(
-              'Frienddly',
-              'images/frienddly.png',
-              'Développeur web',
-              'Développement de fonctionnalités front-end et back-end pour une plateforme de réseaux sociaux. Amélioration de l\'expérience utilisateur et optimisation des performances.',
-              'Mise en œuvre de solutions innovantes pour répondre aux besoins des utilisateurs et garantir la scalabilité de l\'application.',
+            const SizedBox(height: 16),
+            _buildFormationSection(
+              logo: 'assets/LogoWhite.png',
+              title: 'Virtual Sentinel',
+              items: [
+                'Projet de fin d\'année',
+                'Application de formation à la cybersécurité',
+              ],
             ),
           ],
         ),
@@ -40,55 +53,61 @@ class ExperienceScreen extends StatelessWidget {
     );
   }
 
-  Widget experienceItem(String company, String logoPath, String title,
-      String description, String additionalInfo) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Image.asset(
-                logoPath,
+  Widget _buildFormationSection({
+    required String logo,
+    required String title,
+    required List<String> items,
+  }) {
+    return Card(
+      elevation: 4,
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Flexible(
+              flex: 1,
+              child: Image.asset(
+                logo,
                 width: 50,
                 height: 50,
               ),
-              const SizedBox(width: 10),
-              Column(
+            ),
+            const SizedBox(width: 16),
+            Flexible(
+              flex: 3,
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    company,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                children: <Widget>[
                   Text(
                     title,
                     style: const TextStyle(
+                      fontWeight: FontWeight.bold,
                       fontSize: 16,
-                      fontStyle: FontStyle.italic,
                     ),
+                  ),
+                  const SizedBox(height: 8),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: items
+                        .map((item) => Text(
+                              item,
+                              style: const TextStyle(fontSize: 14),
+                            ))
+                        .toList(),
                   ),
                 ],
               ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          Text(description),
-          if (additionalInfo.isNotEmpty) ...[
-            const SizedBox(height: 5),
-            Text(additionalInfo),
+            ),
           ],
-          const Divider(
-            height: 30,
-            thickness: 1,
-            color: Colors.grey,
-          ),
-        ],
+        ),
       ),
     );
   }
+}
+
+void main() {
+  runApp(const MaterialApp(
+    home: ExperienceScreen(),
+  ));
 }

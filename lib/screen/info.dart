@@ -6,8 +6,22 @@ class InfoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Infos +'),
-        backgroundColor: Colors.teal,
+        title: const Text('Infos'),
+        backgroundColor: Colors.blue.shade700,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.facebook),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.facebook),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.dataset_linked),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
@@ -21,9 +35,9 @@ class InfoScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             infoItem(
-              'Passionné de l\'astronomie',
-              'images/astronomie.jpg',
-              'L\'astronomie est une de mes passions depuis l\'enfance. J\'aime passer des nuits à observer les étoiles et les planètes avec mon télescope. Je suis également membre d\'un club d\'astronomie local où nous partageons nos observations et connaissances.',
+              'Passionné par les pizzas',
+              'images/pizza.jpg',
+              'J\'ai toujours aimé les pizzas. J\'aime les cuisiner et les déguster. J\'ai même suivi des cours de cuisine pour apprendre à les préparer. J\'ai une préférence pour les pizzas italiennes.',
             ),
           ],
         ),

@@ -7,22 +7,23 @@ class ProfilScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profil'),
-        backgroundColor:
-            Colors.teal, // Changez la couleur de l'app bar si nécessaire
+        backgroundColor: Colors
+            .blue.shade700, // Changez la couleur de l'app bar si nécessaire
       ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(
-              color: Colors.tealAccent, // Une couleur plus douce pour l'en-tête
+              color:
+                  Colors.blue.shade300, // Une couleur plus douce pour l'en-tête
               padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
               width: double.infinity,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   const Text(
-                    'Amir Meberbeche',
+                    'Gana FALL',
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.black,
@@ -44,13 +45,16 @@ class ProfilScreen extends StatelessWidget {
                     children: <Widget>[
                       IconButton(
                           onPressed: () => {},
-                          icon: const Icon(Icons.facebook, color: Colors.blue)),
+                          icon:
+                              const Icon(Icons.facebook, color: Colors.amber)),
                       IconButton(
                           onPressed: () => {},
-                          icon: const Icon(Icons.facebook, color: Colors.blue)),
+                          icon:
+                              const Icon(Icons.facebook, color: Colors.amber)),
                       IconButton(
                           onPressed: () => {},
-                          icon: const Icon(Icons.facebook, color: Colors.blue)),
+                          icon:
+                              const Icon(Icons.facebook, color: Colors.amber)),
                     ],
                   )
                 ],
@@ -64,45 +68,36 @@ class ProfilScreen extends StatelessWidget {
                   SizedBox(height: 20),
                   Row(
                     children: [
-                      Icon(Icons.mail, color: Colors.teal),
+                      Icon(Icons.mail, color: Colors.amber),
                       SizedBox(width: 10),
-                      Text('amir.398@hotmail.fr',
+                      Text('ganafall9498@gmail.com',
                           style: TextStyle(fontSize: 18)),
                     ],
                   ),
                   SizedBox(height: 20),
                   Row(
                     children: [
-                      Icon(Icons.phone, color: Colors.teal),
+                      Icon(Icons.phone, color: Colors.amber),
                       SizedBox(width: 10),
-                      Text('0123456789', style: TextStyle(fontSize: 18)),
+                      Text('0666098289', style: TextStyle(fontSize: 18)),
                     ],
                   ),
                   SizedBox(height: 20),
                   Row(
                     children: [
-                      Icon(Icons.location_city, color: Colors.teal),
+                      Icon(Icons.location_city, color: Colors.amber),
                       SizedBox(width: 10),
-                      Text('56 moon space', style: TextStyle(fontSize: 18)),
+                      Text('Maisons-Alfort', style: TextStyle(fontSize: 18)),
                     ],
                   ),
                   SizedBox(height: 20),
                   Row(
                     children: [
-                      Icon(Icons.home, color: Colors.teal),
-                      SizedBox(width: 10),
-                      Text('www.amirmeberbeche.com',
-                          style: TextStyle(fontSize: 18)),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Icon(Icons.info, color: Colors.teal),
+                      Icon(Icons.info, color: Colors.amber),
                       SizedBox(width: 10),
                       Expanded(
                         child: Text(
-                          'Développeur web, fan d\'astronomie et de basket-ball.',
+                          'Développeur web',
                           style: TextStyle(fontSize: 18),
                         ),
                       ),
