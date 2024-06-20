@@ -28,19 +28,6 @@ class CompetenceScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const Text('Logiciels',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-            SizedBox(
-              child: Wrap(
-                spacing: 10,
-                runSpacing: 10,
-                children: [
-                  listImage('assets/ps.png', 'Photoshop'),
-                  listImage('assets/ai.png', 'Illustrator'),
-                  listImage('assets/figma.png', 'Figma'),
-                ],
-              ),
-            ),
             const SizedBox(height: 20),
             const Text('Web',
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
@@ -69,7 +56,20 @@ class CompetenceScreen extends StatelessWidget {
                 runSpacing: 10,
                 children: [
                   listImage('assets/flutter.png', 'Flutter'),
-                  listImage('assets/rn.png', 'Unity'),
+                  listImage('assets/rn.png', 'React native'),
+                ],
+              ),
+            ),
+            const Text('Logiciels',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            SizedBox(
+              child: Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                children: [
+                  listImage('assets/ps.png', 'Photoshop'),
+                  listImage('assets/ai.png', 'Illustrator'),
+                  listImage('assets/figma.png', 'Figma'),
                 ],
               ),
             ),
@@ -85,7 +85,7 @@ class CompetenceScreen extends StatelessWidget {
       height: 90,
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.blue.shade900,
         borderRadius: BorderRadius.circular(10),
         boxShadow: const [
           BoxShadow(

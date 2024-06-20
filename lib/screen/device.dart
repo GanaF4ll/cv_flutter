@@ -60,7 +60,7 @@ class _DeviceScreenState extends State<DeviceScreen> {
                 label: 'Compétence'),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.access_alarm,
+                  Icons.info,
                 ),
                 label: 'Infos'),
           ]),
